@@ -1,0 +1,19 @@
+/* BASICS CONFIG */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {}
+
+h1 {}
+
+li,
+button,
+label,
+input,
+a,
+p {
+    font-size: var(--text);
+}

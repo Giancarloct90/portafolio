@@ -1,0 +1,17 @@
+/* BASICS CONFIG */
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: var(--text);
+}
+/*# sourceMappingURL=style.css.map */
