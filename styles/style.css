@@ -275,6 +275,143 @@ nav ul {
   }
 }
 
+.project {
+  width: 90%;
+  margin: auto;
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.project h2 {
+  margin: 2rem 0rem;
+}
+
+.travelly-project,
+.elena-project {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  margin: 5rem 0rem;
+}
+
+.contact {
+  min-height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3rem 10rem;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 10px 40px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 10px 40px rgba(0, 0, 0, 0.6);
+}
+
+.contact input,
+.contact label,
+.contact textarea,
+.contact button {
+  margin: 1rem 0rem;
+  width: 100%;
+}
+
+.contact textarea {
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact button {
+  margin: 2rem;
+  width: 100%;
+  background-color: #154353;
+  color: white;
+  cursor: pointer;
+  padding: 1rem;
+  border: none;
+}
+
+.contact button:hover {
+  background-color: #5f71a8;
+}
+
+footer {
+  background-color: #154353;
+  padding: 0% 5%;
+  min-height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer h2,
+footer ul {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  color: white;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 @media screen and (max-width: 754px) {
   html {
     font-size: 42%;
@@ -307,6 +444,7 @@ nav ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    text-align: center;
   }
   .intro-text {
     display: -webkit-box;
@@ -327,6 +465,12 @@ nav ul {
   .intro-images {
     margin: 4rem 0rem;
     text-align: center;
+  }
+  /* PORJECT*/
+  .travelly-project img,
+  .elena-project img {
+    height: 100%;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

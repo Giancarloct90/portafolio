@@ -16,6 +16,9 @@ $gray-text: #2c2c2c;
 
 @import 'global';
 @import 'intro';
+@import 'projects';
+@import 'contact';
+@import 'footer';
 
 @media screen and (max-width:754px) {
     html {
@@ -43,6 +46,7 @@ $gray-text: #2c2c2c;
 
     .logo {
         @include flex(center, center, column);
+        text-align: center
     }
 
     .intro-text {
@@ -53,5 +57,15 @@ $gray-text: #2c2c2c;
     .intro-images {
         margin: 4rem 0rem;
         text-align: center;
+    }
+
+
+    /* PORJECT*/
+    .travelly-project,
+    .elena-project {
+        img {
+            height: 100%;
+            width: 100%;
+        }
     }
 }
