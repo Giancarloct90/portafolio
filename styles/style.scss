@@ -16,3 +16,42 @@ $gray-text: #2c2c2c;
 
 @import 'global';
 @import 'intro';
+
+@media screen and (max-width:754px) {
+    html {
+        font-size: 42%;
+    }
+
+    .splash {
+        display: none;
+    }
+
+
+    svg {
+        height: 100%;
+        width: 100%;
+    }
+
+    .main-head {
+        width: 100%;
+        margin: 0px;
+
+        nav {
+            width: 100%;
+        }
+    }
+
+    .logo {
+        @include flex(center, center, column);
+    }
+
+    .intro-text {
+        @include flex(center, center, column);
+        text-align: center;
+    }
+
+    .intro-images {
+        margin: 4rem 0rem;
+        text-align: center;
+    }
+}

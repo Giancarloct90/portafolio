@@ -26,13 +26,15 @@ nav ul {
 }
 
 .intro {
+    min-height: 90vh;
     width: 90%;
     margin: auto;
     @include flex(space-around, center, row);
+    flex-wrap: wrap;
 }
 
 .intro-text {
-    flex: 1 1 20rem;
+    flex: 1 1 40rem;
 
     h2 {
         margin: 0rem 0rem;
@@ -59,7 +61,7 @@ nav ul {
 }
 
 .intro-images {
-    flex: 1 1 20rem;
+    flex: 1 1 40rem;
 }
 
 .splash {
@@ -68,4 +70,63 @@ nav ul {
     right: 0px;
     height: 100%;
     z-index: -1;
+}
+
+.active {
+    background-color: $gray-text;
+    color: white;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+}
+
+
+/*ANIMATION*/
+#me {
+    animation: meMove 1.5s ease infinite alternate;
+    transform-origin: bottom;
+}
+
+#plant-left {
+    animation: plansMove 1.5s ease infinite alternate;
+}
+
+#plant-right {
+    animation: plansMove 1.5s ease infinite alternate 0.5s;
+}
+
+#clock-arrow {
+    animation: clockArrowMove 2s linear infinite;
+    transform-box: fill-box;
+    transform-origin: bottom;
+}
+
+@keyframes clockArrowMove {
+    from {
+        transform: rotateZ(0deg);
+
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes plansMove {
+    from {
+        transform: translateY(0%);
+    }
+
+    to {
+        transform: translateY(-30%);
+    }
+}
+
+@keyframes meMove {
+    from {
+        transform: rotateZ(-5deg);
+    }
+
+    to {
+        transform: rotateZ(5deg);
+    }
 }
